@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Blossoming Flowers at Magical Night</title>
+    <title>Chúc Mừng Ngày 20/10</title>
     <style>
         /* Thêm CSS ở đây hoặc liên kết đến tệp style.css của bạn */
         body {
@@ -14,7 +14,15 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-color: #000; /* Nền tối */
+            background-color: #2c3e50; /* Nền tối */
+            color: white; /* Màu chữ trắng */
+            font-family: Arial, sans-serif; /* Font chữ */
+            text-align: center; /* Căn giữa chữ */
+            margin: 0; /* Xóa margin mặc định */
+        }
+        h1 {
+            font-size: 2.5rem; /* Kích thước chữ lớn hơn */
+            margin: 20px 0; /* Khoảng cách trên và dưới */
         }
         .button {
             margin-top: 20px;
@@ -25,23 +33,22 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.3s; /* Thêm hiệu ứng chuyển màu và phóng to */
         }
         .button:hover {
             background-color: #e67e22; /* Màu nền khi di chuột */
+            transform: scale(1.05); /* Phóng to khi di chuột */
         }
     </style>
 </head>
 <body class="not-loaded">
-
-    
-
+    <h1>Chúc Mừng Ngày 20/10!</h1> <!-- Thêm tiêu đề -->
     <button class="button" id="showFlowerBtn">Nhấp vào đây</button>
 
     <script>
         // Thêm sự kiện click cho nút
         document.getElementById("showFlowerBtn").addEventListener("click", () => {
-            window.location.href = "app1.html"; // Chuyển đến trang index.html
+            window.location.href = "app1.html"; // Chuyển đến trang app1.html
         });
 
         // Tắt class not-loaded sau 1 giây
