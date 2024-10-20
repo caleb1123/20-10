@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Blossoming Flowers at Magical Night</title>
+    <style>
+        /* Thêm CSS ở đây hoặc liên kết đến tệp style.css của bạn */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #000; /* Nền tối */
+        }
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #f39c12; /* Màu nền nút */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #e67e22; /* Màu nền khi di chuột */
+        }
+    </style>
+</head>
+<body class="not-loaded">
+
+    
+
+    <button class="button" id="showFlowerBtn">Nhấp vào đi bé iu</button>
+
+    <script>
+        // Thêm sự kiện click cho nút
+        document.getElementById("showFlowerBtn").addEventListener("click", () => {
+            window.location.href = "app1.html"; // Chuyển đến trang index.html
+        });
+
+        // Tắt class not-loaded sau 1 giây
+        window.onload = () => {
+            const c = setTimeout(() => {
+                document.body.classList.remove("not-loaded");
+                clearTimeout(c);
+            }, 1000);
+        };
+    </script>
+</body>
+</html>

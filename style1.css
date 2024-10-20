@@ -1,0 +1,25 @@
+body.not-loaded {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+#flower {
+    font-size: 100px; /* Kích thước bông hoa */
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
